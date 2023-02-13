@@ -1,5 +1,5 @@
 ---
-- hosts: ip-172-31-69-236.ec2.internal
+- hosts: ip-172-31-25-108.ec2.internal
   become: true
   tasks:
    - name: Add the user 'anil' with a specific uid and a primary group of 'admin'
