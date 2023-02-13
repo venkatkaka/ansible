@@ -1,0 +1,10 @@
+---
+- hosts: ubuntu
+  become: true
+  tasks:
+
+  - name: Remove the user 'anil'
+    ansible.builtin.user:
+      name: anil
+      state: absent
+      remove: yes
