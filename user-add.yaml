@@ -3,7 +3,7 @@
   become: true
   tasks:     
    - name: deploy mysql-db
-     ansible.builtin.command: oc new-app mysql MYSQL_USER=user MYSQL_PASSWORD=pass MYSQL_DATABASE=testdb -l db=mysql
+     ansible.builtin.command: oc new-app mysql MYSQL_USER=user MYSQL_PASSWORD=pass MYSQL_DATABASE=testdb -l db=mysql --name=anil-mysql
    
    - name: list pods
      ansible.builtin.command: oc get pods && oc get svc && oc get deploy && oc get rc 
