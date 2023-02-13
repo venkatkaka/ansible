@@ -1,5 +1,5 @@
 ---
-- hosts: ubuntu
+- hosts: ubuntu_node
   become: true
   tasks:
    - name: Add the user 'anil' with a specific uid and a primary group of 'admin'
