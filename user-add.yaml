@@ -1,0 +1,10 @@
+---
+- hosts: ubuntu
+  become: true
+  tasks:
+   - name: Add the user 'anil' with a specific uid and a primary group of 'admin'
+     ansible.builtin.user:
+       name: anil
+       comment: Anil babu
+       uid: 1040
+       group: admin
