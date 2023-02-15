@@ -4,7 +4,10 @@
   tasks:
   
    - name: oc create project
-     ansible.builtin.command: oc new-project anil-project
+     ansible.builtin.command: oc new-project ajay-project
+     
+   - name: switch to ajay-project
+     ansible.builtin.command: oc ajay-project
      
    - name: deploy todo-app and load balancer
      ansible.builtin.command: oc create -f todo.yaml
