@@ -1,5 +1,5 @@
 ---
-- hosts: ip-172-31-69-236.ec2.internal
+- hosts: ip-172-31-12-38.us-east-2.compute.internal
   become: true
   tasks:
 
