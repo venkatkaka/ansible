@@ -1,5 +1,5 @@
 ---
-- hosts: ip-172-31-47-179.us-east-2.compute.internal
+- hosts: ec2-18-219-116-74.us-east-2.compute.amazonaws.com
   become: true
   tasks:
 
